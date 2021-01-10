@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MyComponent;
+namespace Keboola\Extractor\GoogleFit;
 
 use Keboola\Component\BaseComponent;
 

@@ -1,6 +1,6 @@
 {
-    "name": "keboola/my-component",
-    "description": "MyComponent description",
+    "name": "keboola/ex-google-fit",
+    "description": "Google Fit extractor",
     "license": "MIT",
     "require": {
         "php": "^7.4",
@@ -17,13 +17,13 @@
     },
     "autoload": {
         "psr-4": {
-            "MyComponent\\": "src/"
+            "Keboola\\Extractor\\GoogleFit\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyComponent\\Tests\\": "tests/phpunit/",
-            "MyComponent\\FunctionalTests\\": "tests/functional/"
+            "Keboola\\Extractor\\GoogleFit\\Tests\\": "tests/phpunit/",
+            "Keboola\\Extractor\\GoogleFit\\FunctionalTests\\": "tests/functional/"
         }
     },
     "scripts": {
