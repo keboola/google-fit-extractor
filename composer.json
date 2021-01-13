@@ -4,7 +4,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.4",
-        "keboola/php-component": "^8.1"
+        "ext-json": "*",
+        "doctrine/cache": "^1.10",
+        "keboola/csv": "^2.2",
+        "keboola/google-client-bundle": "^5.1",
+        "keboola/php-component": "^8.1",
+        "kevinrob/guzzle-cache-middleware": "^3.3"
     },
     "require-dev": {
         "php-parallel-lint/php-parallel-lint": "^1.2",
