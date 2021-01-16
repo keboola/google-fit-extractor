@@ -20,6 +20,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	&& chmod +x /tmp/composer-install.sh \
 	&& /tmp/composer-install.sh
 
+RUN pecl install xdebug && docker-php-ext-enable xdebug;
+ENV PHP_IDE_CONFIG="serverName=docker-code"
+COPY docker/xdebug.ini.dist $PHP_INI_DIR/conf.d/xdebug.ini
+
 ENV LANGUAGE=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 ENV LC_ALL=en_US.UTF-8
